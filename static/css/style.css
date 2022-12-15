@@ -22,7 +22,7 @@ body {
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #bd2424;
 }
 
 .main-bg {
@@ -43,7 +43,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #0f5132;
 }
 
 .author {
@@ -62,7 +62,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #8a8589;
     color: white;
     position: relative;
 }
@@ -107,18 +107,18 @@ body {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #0f5132;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #0f5132;
 }
 
 .link {
-    color: #23BBBB;
+    color: #0f5132;
     text-decoration: none;
 }
 
@@ -139,4 +139,8 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+#add_post_heading {
+    text-align: center;
 }
