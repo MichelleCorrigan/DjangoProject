@@ -11,11 +11,25 @@ class CommentForm(forms.ModelForm):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'author', 'content', 'featured_image')
+        fields = ('title', 'slug', 'author', 'content', 'featured_image')
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control'}),
+            'slug': forms.TextInput(attrs={'class': 'form-control'}),
             'author': forms.Select(attrs={'class': 'form-control-sm'}),
+            'content': forms.Textarea(attrs={'class': 'form-control'}),
+            'featured_image': forms.FileInput(attrs={'class': 'form-control'}),
+        }
+
+class EditForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = ('title', 'content', 'featured_image')
+
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'form-control'}),
+            # 'slug': forms.TextInput(attrs={'class': 'form-control'}),
+            # 'author': forms.Select(attrs={'class': 'form-control-sm'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
             'featured_image': forms.FileInput(attrs={'class': 'form-control'}),
         }
