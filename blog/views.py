@@ -3,11 +3,12 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostForm, EditForm
+from django.urls import reverse_lazy
 
 
 class PostList(generic.ListView):
     model = Post
-    queryset = Post.objects.filter(status=1).order_by('created_on')
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 6
 
@@ -89,3 +90,9 @@ class EditPost(generic.UpdateView):
     form_class = EditForm
     template_name = 'edit_post.html'
     # fields = ('title', 'slug', 'content', 'featured_image')
+
+
+class DeletePost(generic.DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
+    success_url = reverse_lazy('home')

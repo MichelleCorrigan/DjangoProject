@@ -24,7 +24,12 @@
                                 </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }} -<small><a href="{% url 'edit_post' post.slug %}">Edit</a></small></h2>
+                                <h2 class="card-title">{{ post.title }}</h2> 
+                                    <p><small>
+                                    <a href="{% url 'edit_post' post.slug %}">Edit</a> | 
+                                
+                                    <a href="{% url 'delete_post' post.slug %}">Delete</a>
+                                    </small></p>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr />
