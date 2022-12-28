@@ -2,6 +2,7 @@
 
 {% block content %}
 
+{% if user.is_authenticated %}
 <div class="container">
     <br>
 
@@ -19,6 +20,11 @@
         </div>
     </div>
 </div>
+{% else %}
+
+You must be logged in to delete posts
+
+{% endif %}
 
 
 

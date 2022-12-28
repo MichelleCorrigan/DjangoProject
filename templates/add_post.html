@@ -4,20 +4,24 @@
 
 <br>
 
-<h3 id="add_post_heading">Add Post...</h3>
+{% if user.is_authenticated %}
+    <h3 id="add_post_heading">Add Post...</h3>
 
-<br><br>
-<div class="container">
-    <div class="form-group">
-        <form method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-signup btn-lg">Post</button>
-            <br><br>
+    <br><br>
+    <div class="container">
+        <div class="form-group">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-signup btn-lg">Post</button>
+                <br><br>
+        </div>
     </div>
-</div>
+{% else %}
 
-
-
+You must be logged in to add a post
+    
+{% endif %}
+    
 
 {% endblock %}
