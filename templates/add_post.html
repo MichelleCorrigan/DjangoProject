@@ -13,13 +13,14 @@
             <form method="POST">
                 {% csrf_token %}
                 {{ form.as_p }}
+                {{ foobar|safe }}
                 <button type="submit" class="btn btn-signup btn-lg">Post</button>
                 <br><br>
         </div>
     </div>
 {% else %}
 
-You must be logged in to add a post
+You must be logged in to add a posts
     
 {% endif %}
     
