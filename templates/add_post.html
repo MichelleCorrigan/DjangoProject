@@ -18,6 +18,18 @@
                 <br><br>
         </div>
     </div>
+
+
+    <!-- JavaScript to restrict who can make blog posts -->
+    <script>
+
+        var name = "{{ user.id }}";
+        document.getElementById("creator").value = name;
+
+    </script>
+
+
+
 {% else %}
 
 You must be logged in to add a posts
