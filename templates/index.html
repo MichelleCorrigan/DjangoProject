@@ -20,16 +20,18 @@
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="author">Author: {{ post.author.first_name }} {{ post.author.last_name }}</p>
+                                    <p class="author">Author: {{ post.author }}</p>
                                 </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2> 
                                     <p><small>
                                     {% if user.is_authenticated %}
-                                        <a href="{% url 'edit_post' post.slug %}">Edit</a> | 
-                                    
-                                        <a href="{% url 'delete_post' post.slug %}">Delete</a>
+                                        {% if user.id == post.author.id %}
+                                            <a href="{% url 'edit_post' post.slug %}">Edit</a> | 
+                                        
+                                            <a href="{% url 'delete_post' post.slug %}">Delete</a>
+                                        {% endif %}
                                     {% endif %}
                                     </small></p>
                                 <p class="card-text">{{ post.excerpt }}</p>
