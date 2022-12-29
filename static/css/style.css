@@ -70,7 +70,7 @@ body {
 
 .masthead-image {
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .masthead-image:after {

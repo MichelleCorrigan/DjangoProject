@@ -16,11 +16,9 @@ class PostForm(forms.ModelForm):
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control-l'}),
-            'author': forms.TextInput(attrs={'class': 'form-control-l', 'value': '', 'id': 'creator', 'type': 'hidden'}),
-            # 'slug': forms.TextInput(attrs={'class': 'form-control-l'}),
-            # 'author': forms.Select(attrs={'class': 'form-control-sm'}),
+            'author': forms.TextInput(attrs={'class': 'form-control-l', 'value': '', 'id': 'creator', 'type': 'hidden'}),  # noqa
             'content': SummernoteWidget(),
-            'featured_image': forms.FileInput(attrs={'class': 'form-control-m'}),
+            'featured_image': forms.FileInput(attrs={'class': 'form-control-m'}),  # noqa
         }
 
 
@@ -31,8 +29,7 @@ class EditForm(forms.ModelForm):
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control-l'}),
-            # 'slug': forms.TextInput(attrs={'class': 'form-control'}),
             'author': forms.Select(attrs={'class': 'form-control-sm'}),
             'content': SummernoteWidget(),
-            'featured_image': forms.FileInput(attrs={'class': 'form-control-m'}),
+            'featured_image': forms.FileInput(attrs={'class': 'form-control-m'}),  # noqa
         }
