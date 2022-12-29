@@ -65,11 +65,12 @@ body {
     background-color: #8a8589;
     color: white;
     position: relative;
+    margin-bottom: 2%;
 }
 
 .masthead-image {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .masthead-image:after {
@@ -97,12 +98,13 @@ body {
 }
 
 .post-title {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 5%;
 }
 
 .post-subtitle {
     margin-left: 5%;
+    position: relative;
     color: lightgray;
 }
 
