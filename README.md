@@ -2,7 +2,7 @@
 
 This is a blog where fans of all things Christmas, can share their recipes and craft ideas. Whilst also browsing and picking up new ideas from other users.
 
-![Mockup](images/2022-12-30.png)
+![Mockup](readme-images/2022-12-30.png)
 
 ## [View the live website here](https://christmas-creations.herokuapp.com/)
 ---
@@ -48,11 +48,14 @@ This project is a blog site dedicated to Christmas recipes and craft ideas. Regi
 The site has a simple and clear design, making it easy and enjoyable to navigate through.
 
 ### Colour Scheme
-The colour scheme was chosen with traditional christmas colours of red and green in mind.
+The colour scheme was chosen with traditional christmas colours of warm reds and greens in mind, using hues of grey and white to establish a contrast for background and text to enhance user accessibility.
 
-<!-- Coolors Palette Widget -->
-      <script src="https://coolors.co/palette-widget/widget.js"></script>
-      <script data-id="039897114241124654">new CoolorsPaletteWidget("039897114241124654", ["f9fafc","4a4a4f","e84610","bd2424","0f5132"]); </script>
+Image of colour palette made on [Coolors](https://coolors.co/)
+
+![Colour Palette](readme-images/cc-colour-scheme.png)
+
+### Images
+
 
 ## Technologies Used
 
