@@ -64,6 +64,45 @@ There is one placeholder image of a green christmas plant on a red background. O
 
 </details>
 
+### Fonts
+The main font family used is Roboto, with Lato used for the brand logo and Sans Serif as the backup font if the imported font doesn't load. Fonts were imported from [Google Fonts](https://fonts.google.com/)
+
+### Wireframes
+
+<details>
+
+ <summary>Home Page</summary>
+
+ ![Home Page](readme-images/home-page.png)
+
+</details>
+
+<details>
+
+ <summary>Blog Post</summary>
+
+ ![Blog Post Page](readme-images/blog-post-page.png)
+ 
+</details>
+
+<details>
+
+ <summary>Sign In</summary>
+
+ ![Sign In Page](readme-images/Sign-in-page.png)
+ 
+</details>
+
+<details>
+
+ <summary>Sign Up</summary>
+
+ ![Sign Up Page](readme-images/sign-up-page.png)
+ 
+</details>
+
+---
+
 ## Technologies Used
 
 - HTML
