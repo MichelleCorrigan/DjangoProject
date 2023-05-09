@@ -1,13 +1,26 @@
 # Christmas Creations Blog
 
+This is a blog where fans of all things Christmas, can share their recipes and craft ideas. Whilst also browsing and picking up new ideas from other users.
+
 ![Mockup](images/2022-12-30.png)
-
-This is a blog where users can share Christmas recipes and craft ideas.
-
-This project is for educational purposes and can not be used as a template for business use.
 
 ## [View the live website here](https://christmas-creations.herokuapp.com/)
 ---
+
+## Contents
+* [Introduction](#introduction)
+* [User Stories](#user-stories)
+* [Design](#design)
+* [Technologies Used](#technologies-used)
+* [Deployment](#deployment)
+  * [Deploying on Heroku](#deploying-on-heroku)
+  * [Forking the Repository](#forking-the-repository)
+  * [Creating a Clone](#creating-a-clone)
+* [Credits](#credits)
+  * [Code](#code)
+  * [Content](#content)
+* [Features to implement in the future](#features-to-implement-in-the-future)
+
 
 ## Introduction
 
@@ -31,6 +44,15 @@ This project is a blog site dedicated to Christmas recipes and craft ideas. Regi
 - Edit and update post: As a Site User I can edit my post so that I can amend any errors and and make updates
 - Delete post: As a Site User I can delete my post so that it is no longer visible on the blog
 
+## Design
+The site has a simple and clear design, making it easy and enjoyable to navigate through.
+
+### Colour Scheme
+The colour scheme was chosen with traditional christmas colours of red and green in mind.
+
+<!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="039897114241124654">new CoolorsPaletteWidget("039897114241124654", ["f9fafc","4a4a4f","e84610","bd2424","0f5132"]); </script>
 
 ## Technologies Used
 
@@ -141,7 +163,7 @@ References used:
 - Recipes and their images were taken from [BBC Food](https://www.bbc.co.uk/food)
 - Placeholder image from [Unsplash](https://unsplash.com/s/photos/christmas-background)
 
-### Features to Implement in the future
+## Features to Implement in the future
 
 - Expand messaging system to display success message when comment added, and error message when user submits an empty comment form
 - Add blog categories for seperation eg. a recipe category, table-settings category etc
