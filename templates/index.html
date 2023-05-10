@@ -15,7 +15,7 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="{% static 'images/placeholder.webp' %}"
+                                    src="static/images/placeholder.webp"
                                         alt="Christmas plant on red background">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
