@@ -7,6 +7,19 @@ from django.utils.text import slugify
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=200, unique=True)
+
+    class Meta:
+        verbose_name_plural = "Categories"
+        
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('home', )
+
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, blank=True)
@@ -18,6 +31,7 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=1)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
+    category = models.CharField(max_length=200, default='uncatergorized')
 
     class Meta:
         ordering = ['created_on']

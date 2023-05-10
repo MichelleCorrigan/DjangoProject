@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Category
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -19,3 +19,9 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = ('name', 'body', 'post', 'created_on')
     list_filter = ('created_on',)
     search_fields = ['name', 'email', 'body']
+
+
+@admin.register(Category)
+class CommentAdmin(admin.ModelAdmin):
+
+    earch_fields = ['name',]
