@@ -26,6 +26,8 @@
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2> 
+                                <a href="{% url 'category' post.category %}" class="post-link">
+                                    <h4 class="card-title">{{ post.category }}</h4> 
                                     <p><small>
                                     {% if user.is_authenticated %}
                                         {% if user.id == post.author.id %}
