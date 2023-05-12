@@ -24,4 +24,4 @@ class CommentAdmin(admin.ModelAdmin):
 @admin.register(Category)
 class CommentAdmin(admin.ModelAdmin):
 
-    search_fields = ['name',]
+    search_fields = ['name', ]
