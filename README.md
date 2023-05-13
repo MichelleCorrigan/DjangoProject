@@ -12,6 +12,8 @@ This is a blog where fans of all things Christmas, can share their recipes and c
 * [User Stories](#user-stories)
 * [Design](#design)
 * [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Bugs](#bugs)
 * [Deployment](#deployment)
   * [Deploying on Heroku](#deploying-on-heroku)
   * [Forking the Repository](#forking-the-repository)
@@ -116,6 +118,65 @@ The main font family used is Roboto, with Lato used for the brand logo and Sans 
 - Git
 - Github
 
+## Testing
+- HTML and CSS were validated using the [W3C Validator](https://validator.w3.org/)
+  - HTML - all clear
+
+    <details>
+
+      <summary>HTML validation</summary>
+
+      ![HTML validation](readme-images/CC-html-validation.png)
+ 
+    </details>
+
+  - CSS - all clear
+
+    <details>
+
+      <summary>CSS validation</summary>
+
+      ![CSS validation](readme-images/CC-css-validation.png)
+    
+    </details>
+
+- Python was validated using the [CI Python Linter](https://pep8ci.herokuapp.com/)
+
+    Python files tested were:
+    - models.py
+    - views.py
+    - christmas - urls.py
+    - blog - urls.py
+    - admin.py
+    - forms.py
+    - settings.py
+- All files tested clear with no errors found
+
+- JavaScript code was tested on [Jshint](https://jshint.com/) and had no errors.
+
+  <details>
+
+    <summary>JavaScript validation</summary>
+
+    ![JavaScript validation](readme-images/CC-js-validation.png)
+    
+  </details>
+
+- Lighthouse validation was run, with the following results;
+
+  <details>
+
+    <summary>Lighthouse validation</summary>
+
+    ![Lighthouse validation](readme-images/CC-lighthouse.png)
+    
+  </details>
+
+Showing some work is still to be done regarding images to improve the performance score.
+
+## Bugs 
+- The image on the post doesn't save, either during the creation process or during the edit process; there is a placeholder to cover this base though, which limits the negative impact a bit.
+
 ## Deployment
 
 This project was developed using a [GitPod](https://gitpod.io/) workspace. The code was commited to [Git](https://git-scm.com/) and pushed to [GitHub](https://github.com/) using the terminal.
@@ -216,13 +277,4 @@ References used:
 ## Features to Implement in the future
 
 - Expand messaging system to display success message when comment added, and error message when user submits an empty comment form
-- Add blog categories for seperation eg. a recipe category, table-settings category etc
 - Add a countdowm timer to display time left untill Christmas Day of the current year 
-
-## Testing
-
-Testing information can be found in a separate [testing file] that I haven't created yet...
-
-## Issues and Bugs 
-
-Many...
