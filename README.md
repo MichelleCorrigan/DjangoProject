@@ -45,6 +45,7 @@ This project is a blog site dedicated to Christmas recipes and craft ideas. Regi
 - Add post: As a Site User I can create a new post so that I can add to the blog content
 - Edit and update post: As a Site User I can edit my post so that I can amend any errors and and make updates
 - Delete post: As a Site User I can delete my post so that it is no longer visible on the blog
+- As a Site User I can view categorized posts together so that I can easily select a post to view
 
 ## Design
 The site has a simple and clear design, making it easy and enjoyable to navigate through.
@@ -119,6 +120,47 @@ The main font family used is Roboto, with Lato used for the brand logo and Sans 
 - Github
 
 ## Testing
+
+#### Common Elements Testing
+Manual testing was conducted on the following elements that appear on every page:
+
+- Test that Logo redirects to home screen.
+
+- Test that Nav Links work.
+
+- Test that Social Links work and open in a new page.
+
+#### Home Page
+Manual testing was conducted on the following elements of the Home Page:
+
+- Test that user welcome message displays username.
+
+  - On logging in, there is a message alert at the top of the Home page which tells the user that they have successfully logged in.
+
+- Test that Post titles redirect user to individual detailed Post page.
+
+  - The Post title of each post card turns red and when clicked redirects the user to the Post Detail page.
+
+#### Post Page/Edit Post Page
+Manual testing was conducted on the following elements of the Post Page and Edit Post Page:
+
+- Test that posts can be edited by author only.
+
+- Test that posts can only be deleted by author.
+
+- Test that a warning is given before a user deletes a post.
+
+- Test that posts can be liked and unliked when logged in.
+
+- Test that comments can be submitted.
+
+#### Sign in/Sign Out/Sign Up Pages
+Manual testing was conducted on the following elements of the Sign In Page, Sign Out Page and Sign Up Page:
+
+- Users can register, log in and logout.
+
+
+### Validation
 - HTML and CSS were validated using the [W3C Validator](https://validator.w3.org/)
   - HTML - all clear
 
@@ -173,6 +215,17 @@ The main font family used is Roboto, with Lato used for the brand logo and Sans 
   </details>
 
 Showing some work is still to be done regarding images to improve the performance score.
+
+- Browser Validation tested on;
+  - Chrome
+  - Safari
+  - Edge
+  - Firefox
+
+- Responsiveness tested on;
+  - Laptop
+  - Iphone XS
+  - Samsung Galaxy A50
 
 ## Bugs 
 - The image on the post doesn't save, either during the creation process or during the edit process; there is a placeholder to cover this base though, which limits the negative impact a bit.
